@@ -3,7 +3,11 @@ import styles from "./app.module.css";
 function App() {
   return (
     <div className={styles.layout}>
-      <header>header</header>
+      <header>
+        <div className="container">
+        header
+        </div>
+      </header>
       <main>
         <section>
           <h1>Home</h1>
