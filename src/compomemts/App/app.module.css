@@ -2,4 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-items: stretch;
+
+  color:var(--body-color);
+  background: var(--body-bg-color);
 }
+

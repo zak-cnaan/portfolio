@@ -1,11 +1,25 @@
+import { useState } from "react";
 import styles from "./app.module.css";
 
 function App() {
+  const [isLightTheme, set_isLightTheme] = useState(true);
+
+  const toggleTheme = () => {
+    set_isLightTheme(!isLightTheme);
+  };
   return (
-    <div className={styles.layout}>
+    <div className={`${styles.layout} ${isLightTheme ? "":"theme-dark"}`}>
       <header>
         <div className="container">
-        header
+        <label>
+        <input
+          type="checkbox"
+          checked={isLightTheme}
+          onChange={toggleTheme}
+        />
+        {isLightTheme ? "Light theme":"Dark theme"}
+      </label>
+
         </div>
       </header>
       <main>

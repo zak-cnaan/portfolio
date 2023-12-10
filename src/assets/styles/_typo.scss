@@ -3,9 +3,8 @@ h1{
 }
 
 a{
-    color: vars.$color-link;
-}
-
-.theme-dark a{
-    color: vars.$color-light;
+    color: var(--link-color);
+    &:hover{
+        text-decoration: none;
+    }
 }

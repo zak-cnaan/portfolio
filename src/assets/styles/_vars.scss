@@ -2,37 +2,34 @@
 // Colors
 // .
 
-$color-blue: #0d6efd;
-$color-indigo: #6610f2;
-$color-purple: #6f42c1;
-$color-pink: #d63384;
-$color-red: #dc3545;
-$color-orange: #fd7e14;
-$color-yellow: #ffc107;
-$color-green: #198754;
-$color-teal: #20c997;
-$color-cyan: #0dcaf0;
-$color-white: #fff;
-$color-black: #000;
-$color-gray: #6c757d;
-$color-gray-dark: #343a40;
+// $color-blue: #0d6efd;
+// $color-indigo: #6610f2;
+// $color-purple: #6f42c1;
+// $color-pink: #d63384;
+// $color-red: #dc3545;
+// $color-orange: #fd7e14;
+// $color-yellow: #ffc107;
+// $color-green: #198754;
+// $color-teal: #20c997;
+// $color-cyan: #0dcaf0;
+// $color-white: #fff;
+// $color-black: #000;
+// $color-gray: #6c757d;
+// $color-gray-dark: #343a40;
 
-$color-light: #f8f9fa;
-$color-dark: #212529;
+// $color-light: #f8f9fa;
+// $color-dark: #212529;
 
-// $color-text-color: #000;
-$color-primary: #0d6efd;
-$color-secondary: #6c757d;
-$color-success: #198754;
-$color-info: #0dcaf0;
-$color-warning: #ffc107;
-$color-danger: #dc3545;
-
-$color-link: $color-primary;
+// $color-primary: #0d6efd;
+// $color-secondary: #6c757d;
+// $color-success: #198754;
+// $color-info: #0dcaf0;
+// $color-warning: #ffc107;
+// $color-danger: #dc3545;
 
 
 // .
-// Font
+// Fonts
 // .
 
 $font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
@@ -47,23 +44,10 @@ $font-arial: Arial, Helvetica, sans-serif;
 // .
 
 $bp-sm: 576px;
-// $color-sm-bp: calc($color-sm - 0.02px);
-// $color-container-sm: 540px;
+// $bp-sm-bp: calc($bp-sm - 0.02px);
+// $bp-container-sm: 540px;
 
 $bp-md: 768px;
-// $color-md-bp: calc($color-md - 0.02px);
-// $color-container-md: 72rem;
-
 $bp-lg: 992px;
-// $color-lg-bp: calc($color-lg - 0.02px);
-// $color-container-lg: 960px;
-
 $bp-xl: 1200px;
-// $color-xl-bp: calc($color-xl - 0.02px);
-// $color-container-xl: 1140px;
-
 $bp-xxl: 1400px;
-// $color-xxl-bp: calc($color-xxl - 0.02px);
-// $color-container-xxl: 1320px;
-
-
