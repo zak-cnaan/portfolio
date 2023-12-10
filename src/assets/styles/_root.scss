@@ -1,0 +1,22 @@
+:root {
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+
+body {
+  font-size: 16px;
+  font-family: vars.$font-arial;
+  color: vars.$color-dark;
+  background: vars.$color-light;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  &.theme-dark{
+    background: vars.$color-dark;
+    color: vars.$color-light;
+  }
+}
