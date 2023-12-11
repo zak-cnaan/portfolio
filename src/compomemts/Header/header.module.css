@@ -1,0 +1,13 @@
+.header{
+    padding:20px;
+    top: -100%;
+  position: sticky;
+
+
+    -moz-transition: top 0.5s ease-in-out;
+      transition: top 0.5s ease-in-out;
+}
+:global(.sticky).header{
+  top:0;
+  position: sticky;
+}

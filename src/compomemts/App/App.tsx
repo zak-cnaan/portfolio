@@ -1,29 +1,22 @@
 import { useState } from "react";
 import styles from "./app.module.css";
 
+import Header from "../Header/Header";
+
 function App() {
   const [isLightTheme, set_isLightTheme] = useState(true);
 
   const toggleTheme = () => {
     set_isLightTheme(!isLightTheme);
   };
+
+
   return (
     <div className={`${styles.layout} ${isLightTheme ? "":"theme-dark"}`}>
-      <header>
-        <div className="container">
-        <label>
-        <input
-          type="checkbox"
-          checked={isLightTheme}
-          onChange={toggleTheme}
-        />
-        {isLightTheme ? "Light theme":"Dark theme"}
-      </label>
-
-        </div>
-      </header>
-      <main>
+      <Header />
+      <main className={styles.main}>
         <section>
+
           <h1>Home</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -32,10 +25,11 @@ function App() {
             consectetur provident quasi autem illo.
           </p>
           <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
-            <li>Lorem, ipsum.</li>
+            <li>Sticky footer</li>
+            <li>Sticky header</li>
+            <li>Stand with israel.</li>
+            <li>Logo</li>
+            <li>outline color.</li>
             <li>Lorem, ipsum.</li>
           </ul>
           <h2>Lorem.</h2>
@@ -58,6 +52,20 @@ function App() {
             consectetur provident quae aliquam repellendus mollitia!
           </p>
           {/* <img src={logo} alt="" /> */}
+
+          <div>
+        <div className="container">
+        <label>
+        <input
+          type="checkbox"
+          checked={isLightTheme}
+          onChange={toggleTheme}
+        />
+        {isLightTheme ? "Light theme":"Dark theme"}
+      </label>
+
+        </div>
+          </div>
         </section>
       </main>
       <footer>footer</footer>

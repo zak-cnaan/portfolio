@@ -5,5 +5,10 @@
 
   color:var(--body-color);
   background: var(--body-bg-color);
+
+  min-height: 100vh;
+}
+.main{
+    flex-grow: 1;
 }
 
