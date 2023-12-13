@@ -1,0 +1,22 @@
+@use "../../assets/styles/vars";
+
+.footer {
+  padding: 8px 0;
+
+  @media (min-width: vars.$bp-md) {
+    padding: 16px 0;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.txt span {
+  display: block;
+  font-size: 13px;
+  @media (min-width: vars.$bp-md) {
+    font-size: 14px;
+  }
+}

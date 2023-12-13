@@ -1,3 +1,5 @@
+@use '../../assets/styles/vars';
+
 .toggle{
     color: var(--body-color);
 
@@ -8,8 +10,14 @@
     align-items: center;
     justify-content: center;
 
+    margin-left:auto;
+
     opacity: 0.7;
     transition: opacity 0.5s;
+
+    @media (min-width: vars.$bp-sm) {
+        margin-left: initial;
+    }
 
 }
 .toggle:hover{

@@ -7,6 +7,9 @@ function NavLinks() {
             <li><a className={styles.link} href="/">About</a></li>
             <li><a className={styles.link} href="/">Skills</a></li>
             <li><a className={styles.link} href="/">Projects</a></li>
+            <li><a className={styles.link} href="/">About</a></li>
+            <li><a className={styles.link} href="/">Skills</a></li>
+            <li><a className={styles.link} href="/">Projects</a></li>
         </ul>
       </nav>
   )

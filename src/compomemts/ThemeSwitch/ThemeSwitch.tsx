@@ -1,11 +1,11 @@
-import styles from './toggle.module.css';
-import { MdOutlineLightMode } from "react-icons/md";
-import { MdOutlineNightlight } from "react-icons/md";
+import styles from './toggle.module.scss';
+import { MdLightMode } from "react-icons/md";
+import { MdOutlineNightlightRound } from "react-icons/md";
 import * as Toggle from "@radix-ui/react-toggle";
 
 function ThemeSwitch({toggleTheme, isLightTheme}) {
   const isLight = isLightTheme;
-  const Icon = isLight ? MdOutlineLightMode : MdOutlineNightlight;
+  const Icon = isLight ? MdLightMode : MdOutlineNightlightRound;
 
   return (
       <Toggle.Root

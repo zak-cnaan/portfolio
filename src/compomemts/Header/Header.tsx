@@ -1,9 +1,9 @@
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 import Logo from "../Logo/Logo";
 import NavLinks from "./NavLinks/NavLinks";
 import { useEffect, useRef, useState } from "react";
-import SocialNav from "../SocialNav/SocialNav";
+// import SocialNav from "../SocialNav/SocialNav";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 function Header({toggleTheme, isLightTheme}) {
@@ -42,7 +42,7 @@ function Header({toggleTheme, isLightTheme}) {
     >
       <div className={styles.container + " container"}>
         <Logo />
-        <SocialNav />
+        {/* <SocialNav /> */}
         <ThemeSwitch  toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
         <NavLinks />
       </div>

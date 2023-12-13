@@ -33,9 +33,12 @@
   --body-color: var(--color-dark);
   --body-bg-color: var(--color-light);
   --link-color: var(--color-primary);
+  --footer-color:#006;
 }
 .theme-dark {
   --body-color: var(--color-light);
   --body-bg-color: var(--color-dark);
   --link-color: var(--color-info);
+  --footer-color:#ccf;
+
 }

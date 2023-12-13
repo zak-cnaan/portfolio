@@ -1,21 +1,38 @@
+@use "../../assets/styles/vars";
 
-a.logoLink{
-    display:inline-flex;
-    align-items: center;
-    gap:8px;
-    text-decoration: none;
-    order:1;
-}
-.icon{
-    transition: transform 1200ms;
-    transform: rotate(0deg);
-    display: inline-flex;
-}
-a.logoLink:hover .icon{
-    transform: rotate(360deg);
-}
-.title{
-    font-weight: bold;
-    font-size: 18px;
-}
+a.logoLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  order: 1;
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 
+  @media (min-width: vars.$bp-md) {
+    gap: 16px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.icon {
+  transition: transform 1200ms;
+  transform: rotate(0deg);
+  display: inline-flex;
+}
+a.logoLink:hover .icon {
+  transform: rotate(360deg);
+}
+.title {
+  font-weight: bold;
+  font-size: 18px;
+
+  @media (min-width: vars.$bp-md) {
+    font-size: 24px;
+  }
+}

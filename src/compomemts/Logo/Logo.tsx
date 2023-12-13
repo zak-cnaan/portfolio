@@ -6,7 +6,7 @@ function Logo() {
   return (
     <a href="/" className={styles.logoLink}>
       <span className={styles.icon}>
-        <GiBlackHoleBolas style={{ "fontSize": "32px" }} />
+        <GiBlackHoleBolas  />
       </span>
       <span className={styles.title}>zak cnaan</span>
     </a>

@@ -2,19 +2,19 @@
 
 .nav{
     flex: 0 0 100%;
-    padding: 8px;
+    padding:4px 0;
 
-    @media (min-width: vars.$bp-md) {
+
+    @media (min-width: vars.$bp-sm) {
         flex:unset;
-        padding: 0 16px;
-        padding-left:16px;
-        order:2;
+        margin-right: 16px;
+        order:2 !important;
         margin-left:auto;
     }
 }
 .list{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 8px;
 }
 .link{
@@ -22,6 +22,10 @@
     font-size: 14px;
     opacity: 0.7;
     transition: opacity 0.5s;
+
+    @media (min-width: vars.$bp-md) {
+        font-size: 16px;
+    }
     &:hover{
         text-decoration: underline;
         opacity: 1;

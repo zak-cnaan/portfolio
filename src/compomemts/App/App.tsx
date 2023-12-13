@@ -4,10 +4,11 @@ import styles from "./app.module.css";
 import { useState } from "react";
 import Header from "../Header/Header";
 import ScrollTrigger from 'react-scroll-trigger';
+import Footer from '../Footer/Footer';
 
 
 function App() {
-  const [isLightTheme, set_isLightTheme] = useState(true);
+  const [isLightTheme, set_isLightTheme] = useState(false);
   const toggleTheme = () => {
     set_isLightTheme(!isLightTheme);
   };
@@ -20,8 +21,9 @@ function App() {
   return (
     <div className={`${styles.layout} ${isLightTheme ? "":"theme-dark"}`}>
       <Header toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
-    
-      <main className={styles.main}>
+
+      <main className={styles.main} style={{"background":"gray"}}>OK</main>
+      <main className={styles.main} style={{"display":"none"}}>
         <section>
 
           <h1>Home</h1>
@@ -68,7 +70,7 @@ function App() {
         </section>
       </main>
         <ScrollTrigger onEnter={onEnterViewport} />
-      <footer>footer</footer>
+        <Footer />
     </div>
   );
 }
