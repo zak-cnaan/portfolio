@@ -1,0 +1,29 @@
+@use '../../../assets/styles/vars';
+
+.nav{
+    flex: 0 0 100%;
+    padding: 8px;
+
+    @media (min-width: vars.$bp-md) {
+        flex:unset;
+        padding: 0 16px;
+        padding-left:16px;
+        order:2;
+        margin-left:auto;
+    }
+}
+.list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.link{
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    &:hover{
+        text-decoration: underline;
+        opacity: 1;
+    }
+}

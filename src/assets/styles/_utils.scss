@@ -5,7 +5,7 @@
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 4rem;
+  --bs-gutter-x: 32px;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -56,4 +56,10 @@
   .container {
     max-width: calc(vars.$bp-xxl - 80px);
   }
+}
+
+.list-reset{
+    margin:0;
+    padding: 0;
+    list-style: none;
 }

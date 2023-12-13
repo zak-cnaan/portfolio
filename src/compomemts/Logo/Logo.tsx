@@ -1,14 +1,14 @@
-// import styles from "./logo.module.css";
+import styles from "./logo.module.scss";
 
 import { GiBlackHoleBolas } from "react-icons/gi";
 
 function Logo() {
   return (
-    <a href="/">
-      <span>
-        <GiBlackHoleBolas style={{ "font-size": "120px" }} />
+    <a href="/" className={styles.logoLink}>
+      <span className={styles.icon}>
+        <GiBlackHoleBolas style={{ "fontSize": "32px" }} />
       </span>
-      <span>zak cnaan</span>
+      <span className={styles.title}>zak cnaan</span>
     </a>
   );
 }

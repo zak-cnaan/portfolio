@@ -1,0 +1,21 @@
+
+a.logoLink{
+    display:inline-flex;
+    align-items: center;
+    gap:8px;
+    text-decoration: none;
+    order:1;
+}
+.icon{
+    transition: transform 1200ms;
+    transform: rotate(0deg);
+    display: inline-flex;
+}
+a.logoLink:hover .icon{
+    transform: rotate(360deg);
+}
+.title{
+    font-weight: bold;
+    font-size: 18px;
+}
+

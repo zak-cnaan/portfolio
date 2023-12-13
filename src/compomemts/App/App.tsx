@@ -1,19 +1,26 @@
-import { useState } from "react";
+import '../../assets/styles/global.scss'
 import styles from "./app.module.css";
 
+import { useState } from "react";
 import Header from "../Header/Header";
+import ScrollTrigger from 'react-scroll-trigger';
+
 
 function App() {
   const [isLightTheme, set_isLightTheme] = useState(true);
-
   const toggleTheme = () => {
     set_isLightTheme(!isLightTheme);
   };
+  
+  const onEnterViewport = () => {
+    console.log("Footer")
+  }
 
 
   return (
     <div className={`${styles.layout} ${isLightTheme ? "":"theme-dark"}`}>
-      <Header />
+      <Header toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
+    
       <main className={styles.main}>
         <section>
 
@@ -27,10 +34,14 @@ function App() {
           <ul>
             <li>Sticky footer</li>
             <li>Sticky header</li>
-            <li>Stand with israel.</li>
             <li>Logo</li>
-            <li>outline color.</li>
-            <li>Lorem, ipsum.</li>
+            <li>default outline color.</li>
+
+            <li>utiliti classes</li>
+            <li>Stand with israel.</li>
+            <li>todo: sticky header custom hook</li>
+            <li>Git hub account</li>
+            <li>Github pages</li>
           </ul>
           <h2>Lorem.</h2>
           <p>
@@ -53,21 +64,10 @@ function App() {
           </p>
           {/* <img src={logo} alt="" /> */}
 
-          <div>
-        <div className="container">
-        <label>
-        <input
-          type="checkbox"
-          checked={isLightTheme}
-          onChange={toggleTheme}
-        />
-        {isLightTheme ? "Light theme":"Dark theme"}
-      </label>
-
-        </div>
-          </div>
+      
         </section>
       </main>
+        <ScrollTrigger onEnter={onEnterViewport} />
       <footer>footer</footer>
     </div>
   );
