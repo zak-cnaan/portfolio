@@ -1,3 +1,6 @@
+@value desktop-up1: min-width: 400px;
+@value desktop-up2: min-width: var(--desktop-up2);
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -7,6 +10,9 @@
   background: var(--body-bg-color);
 
   min-height: 100vh;
+  @media (desktop-up2){
+    background-color: red;
+  }
 }
 .main{
     flex-grow: 1;

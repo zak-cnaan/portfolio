@@ -1,4 +1,4 @@
-import '../../assets/styles/global.scss'
+import '../../assets/styles/global.css'
 import styles from "./app.module.css";
 
 import { useState } from "react";

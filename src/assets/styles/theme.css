@@ -1,5 +1,5 @@
 :root {
-  // definitions but not uses
+  /* // definitions but not uses */
 
   --color-blue: #0d6efd;
   --color-indigo: #6610f2;
@@ -27,13 +27,14 @@
   --color-danger: #dc3545;
 }
 
-// used by elements
+/* // used by elements */
 :root,
 .theme-light {
   --body-color: var(--color-dark);
   --body-bg-color: var(--color-light);
   --link-color: var(--color-primary);
   --footer-color:#006;
+  --desktop-up2:400px;
 }
 .theme-dark {
   --body-color: var(--color-light);
