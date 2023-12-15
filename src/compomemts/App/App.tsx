@@ -1,4 +1,5 @@
-import '../../assets/styles/global.scss'
+// import '../../assets/styles/global.scss';
+import '../../assets/styles/styles.scss';
 import styles from "./app.module.css";
 
 import { useState } from "react";
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className={`${styles.layout} ${isLightTheme ? "":"theme-dark"}`}>
-      <Header toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
+      {/* <Header toggleTheme={toggleTheme} isLightTheme={isLightTheme} /> */}
 
       <main className={styles.main} style={{"background":"gray"}}>OK</main>
       <main className={styles.main} style={{"display":"none"}}>
@@ -70,7 +71,7 @@ function App() {
         </section>
       </main>
         <ScrollTrigger onEnter={onEnterViewport} />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   );
 }
